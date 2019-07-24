@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button btnStartService,  btnStartIntentService, btnStartBoundService, btnStopBoundService;
+    public Button btnStartService,  btnStartIntentService, btnStartBoundService, btnStopBoundService;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()){
             case R.id.btn_start_service:
                 Intent mStartService = new Intent(MainActivity.this, OriginService.class );
-                startActivity(mStartService);
+                startService(mStartService);
             break;
             case R.id.btn_start_intent_service:
                 break;

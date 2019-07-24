@@ -42,7 +42,6 @@ public class OriginService extends Service implements DummyAsyncCallback {
 
     @Override
     public void postAsync() {
-
     }
 
     private static class DummyAsync extends AsyncTask<Void, Void, Void>{
@@ -76,9 +75,4 @@ public class OriginService extends Service implements DummyAsyncCallback {
             callback.get().postAsync();
         }
     }
-}
-
-interface DummyAsyncCallback{
-    void preAsync();
-    void postAsync();
 }
