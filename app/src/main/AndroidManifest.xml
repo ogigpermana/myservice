@@ -13,8 +13,12 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <service
+            android:name=".BoundService"
+            android:enabled="true"
+            android:exported="true"></service>
+        <service
             android:name=".DicodingIntentService"
-            android:exported="false"></service>
+            android:exported="false" />
 
         <activity android:name=".MainActivity">
             <intent-filter>
